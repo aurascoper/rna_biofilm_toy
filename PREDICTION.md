@@ -30,4 +30,6 @@ Reason each prediction could fail for the right reason (what in the mechanism wo
 
 Author and date:
 
+Measured fact about the birth bias, recorded 2026-10-07 before any stage runs, because it bounds what the attribution arm can show: at seed 1 over 100 steps, 178 births occur but only 50 of them have more than one empty slot (the colony is dense; most births have exactly one place to go), and at field 4 the per-choice probability shift is 2 to 5 percent, so the expected number of choices altered by the field in a whole run is about one; seed 1 produced zero, and its field 0, field 1 and field 4 runs at decay 0 are identical cell for cell (verified by tracing every birth's probabilities and choice: 43 births had different probabilities, none a different choice). So mean_y moves through deaths, not through the tropism bias, at this horizon; the attribution arm's shift is expected to be indistinguishable from the null, and a prediction that the ladder's mean_y shifts come from births would fail for the right reason.
+
 Notes. The fixed CSV's first row is step 0, the seeded configuration, so the initial index is on record. The verification runs in out/ (round 1: seeds 1 and 2, both engines; round 2.1: seed 1 at field 1 / decay 1) were executed during development to check the fixes and the RNG path and are not stage 1 or stage 2; README says so.
