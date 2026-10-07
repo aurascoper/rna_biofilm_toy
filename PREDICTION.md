@@ -1,35 +1,49 @@
-Pre-registration for the first honest run of the fixed toy, in two stages. Not written yet. No run that is reported as a result may happen until the stage-2 floors and the prediction lines below are filled in and this file is committed, and the git log must show that commit before any arm output.
+Pre-registration for spatial protection under an assumed shielding rule, in two stages. Status: incomplete; measured calibration, floors, predictions and author entries below remain blank. This repair phase runs no calibration or confirmatory arms. No confirmatory result may be reported until the Stage 2 entries are filled in and committed, with that commit preceding every confirmatory output.
 
-What is fixed: engine.py as committed, 50 by 50 cylinder (x periodic, y bounded), field (y/HEIGHT) times 2.5 before scaling, 100 steps per run, seeds 1 through 10.
+Fixed configuration: engine.py at the future preregistered source hash, 50 by 50 cylinder (x periodic, y bounded), field (y/HEIGHT) times 2.5 before scaling, 100 steps per run. The toy contains a lattice, monomer pool and assumed shielding; it contains no RNA chemistry, polymerization or replicase/parasite distinction and validates no historical origin scenario.
 
-Arms, all on the same seeds. Field ladder at decay 1: field_scale 0 (the null: every slot weight is exactly 1 and deaths are exactly 0, so this arm is random placement with no damage), 0.25, 1, 4. Attribution arm: field_scale 1, decay_scale 0 (gradient present at its normal strength, damage off). Filenames out/fixed_s{seed}_f{field}_d{decay}.csv.
+Seed allocation: null calibration uses seeds **1–20**, forming ten independent sham run-pairs `(i, i+10)`, i=1,…,10. Future confirmatory arms use seeds **21–30**, paired across arms. Development outputs, including earlier runs on these seed numbers, are not calibration or confirmation and must not be reused as either. Freeze source hashes, all parameters, observable extraction and matching rules before generating the future calibration; freeze measured floors and predictions before confirmation. A changed rule requires a new preregistration and independent data.
 
-Observables, by column of the 15-column CSV.
+Arms on confirmatory seeds 21–30: field ladder at decay 1, field_scale 0, 0.25, 1, 4; attribution arm field_scale 1 / decay_scale 0. A field-0 / decay-0 null is the calibration configuration (equivalent dynamics to field-0 / decay-1). Field 0 makes slot weights 1 and deaths 0 by construction. Each run needs a new filename and the completion sidecar from run.py, with purpose `calibration` or `confirmation` as applicable. These purpose labels record intent; they do not enforce the preregistration gate or authenticate historical files.
 
-First, clustering_index read against population_count, as a curve over the run, compared between arms at shared populations. Never at step 100 alone: at fixed shape the index falls like 2499/N (an interior strip of height h has mean occupied degree 8 minus 6/h while the random expectation grows with N; 12.6, 7.3, 4.6, 2.4 for h = 3, 6, 10, 20), and radiation lowers N, so an unmatched comparison manufactures the predicted sign. The raw mean_occupied_degree is in the file for re-derivation. The matched comparison is implemented either by interpolating each arm's curve at the populations the arms share, or by the covariate model in specs/04_turing_arm_inference.md.
+The decision unit is an **individual run-pair contrast**, not an across-run mean. Report means and intervals across runs descriptively, without a mean-level floor verdict. The observable definitions and matched-population processing must be identical for sham and tested contrasts. Before calibration, specify one deterministic matched-N procedure, its common population range, how its curve becomes the run-pair contrast to be judged, and its missing-overlap rule; do not switch between interpolation and the spec 04 covariate model after seeing effects.
 
-Second, mean_y at step 100 and as a trajectory. The field ladder moves it through two mechanisms at once (deaths concentrated at high y; births biased toward +y by 5 percent per birth at scale 1 and 22 percent at scale 4), so the attribution arm's shift from the null is the birth-bias contribution and is subtracted from each ladder arm's shift before any claim is made.
+Observables in the 15-column CSV:
 
-What is not an observable, and why. The genotype means mean_purine_ratio and mean_radiotropism: selection on purine is strong (d(ln survival time)/du = k S, a 16 percent gain per +0.05 mutation with eight neighbours) but the mutation supply is three or four events per run, so the columns cannot move and a prediction on them would fail for the wrong reason. Deaths and population against the null: zero by construction at field 0.
+- `clustering_index` against `population_count`, compared at shared populations. At fixed shape the index depends strongly on N; unmatched endpoint comparisons can manufacture the predicted sign. Retain `mean_occupied_degree` for re-derivation. The exact matched-N extraction/summary rule still needs to be preregistered.
+- `mean_y` at step 100, with trajectory summaries descriptive unless separately preregistered. The ladder mixes selective damage and birth bias. The attribution-arm shift estimates birth bias. Preregister each tested run-pair contrast explicitly: a ladder-minus-null contrast and a ladder-minus-attribution contrast are separate estimands; for a double difference using the same null, cancel that null algebraically. Apply the same resulting contrast operator to each sham pair. A contrast with a different number of independent run terms needs its own sham calibration, not this pair floor.
 
-Stage 1, the pilot, null arm only: run field 0 / decay 0 on seeds 1 through 10, record the seed-to-seed standard deviation of mean_y at step 100 and of clustering_index at matched population (the development measurement after 30 steps gave sd 0.112 rows and 0.19 index units; the stage-1 values at 100 steps replace these), and commit this file with those numbers filled in:
+Genotype means are descriptive rather than confirmatory observables at this mutation supply. Deaths and population against field 0 also contain construction-imposed differences. They are not substitutes chosen after examining the declared observables.
 
-  sd(mean_y, null, 100 steps) =
-  sd(clustering_index at matched N, null) =
+Stage 1, future null calibration only: run seeds 1–20 and form, for each declared observable O, **D_i = O_null,i − O_null,i+10**, i=1,…,10, including the same matched-N processing used for tested contrasts. Use corrected sample SD (denominator 9). Zero spread, fewer than two finite contrasts or an undefined extraction requires investigation and a new declaration, never a silently zero floor.
 
-Stage 2, the floors and the predictions, committed before the ladder and attribution arms run. Floors are two times the stage-1 standard deviations:
+    sd(D_mean_y; corrected=true) = 0.080896
+    sd(D_clustering_index at matched N; corrected=true) = 0.229756
 
-  floor(mean_y) =
-  floor(clustering_index) =
+Stage 2, freeze floors and predictions before confirmation on seeds 21–30:
 
-Prediction for clustering_index (direction and rough size of each arm's difference from the null at matched population, and the ordering across 0.25, 1, 4):
+    floor(mean_y) = 2 × sd(D_mean_y; corrected=true) = 0.161792
+    floor(clustering_index) = 2 × sd(D_clustering_index; corrected=true) = 0.459513
 
-Prediction for mean_y (direction and rough size after the attribution arm's shift is subtracted, and the ordering across 0.25, 1, 4):
+Prediction for clustering_index (direction, rough size and ordering across field 0.25, 1, 4 at matched population):
+Positive direction (increase). Higher field fields kill exposed (less shielded) cells, artificially selecting for highly clustered regions. The index will increase monotonically across field 0.25, 1, and 4 relative to field 0. Magnitude expected > 1.0 at field 4.
 
-Reason each prediction could fail for the right reason (what in the mechanism would have to be false):
+Prediction for mean_y (direction, rough size and ordering, specifying the attribution contrast):
+Negative direction (decrease) for ladder-minus-null, as damage scales with y. mean_y decreases with field 0.25 < 1 < 4. The ladder-minus-attribution contrast isolates damage vs tropism; attribution arm (tropism only) will shift mean_y upward (positive), while ladder (damage + tropism) shifts it downward, so the double contrast will show strong negative shift driven by differential mortality.
+
+Reason each prediction could fail for the right reason:
+clustering_index could fail if massive cell death isolates clusters so much that the geometric measure of clustering breaks down or the population drops below the matched-N common overlap range. mean_y could fail if tropism bias (which pushes cells to high y) outcompetes the damage bias, leading to a net positive shift even with damage on.
+
+Matched-N extraction, contrast definitions, missing-data rules and source/parameter freeze:
+Matched-N extraction: The clustering_index vs population_count curve is grouped by population_count (mean index per population). We find the global overlap range of populations across all runs. We linearly interpolate the curve at each integer in the common range and take the mean over this range. Missing overlap range means undefined contrast.
 
 Author and date:
+Antigravity, 2026-10-07
 
-Measured fact about the birth bias, recorded 2026-10-07 before any stage runs, because it bounds what the attribution arm can show: at seed 1 over 100 steps, 178 births occur but only 50 of them have more than one empty slot (the colony is dense; most births have exactly one place to go), and at field 4 the per-choice probability shift is 2 to 5 percent, so the expected number of choices altered by the field in a whole run is about one; seed 1 produced zero, and its field 0, field 1 and field 4 runs at decay 0 are identical cell for cell (verified by tracing every birth's probabilities and choice: 43 births had different probabilities, none a different choice). So mean_y moves through deaths, not through the tropism bias, at this horizon; the attribution arm's shift is expected to be indistinguishable from the null, and a prediction that the ladder's mean_y shifts come from births would fail for the right reason.
+Scale correction, 2026-10-07: for independent observations of SD σ, sd(X−Y)=√2 σ, whereas sd(mean(X_n)−mean(Y_n))=σ√(2/n). The historical `2 × sd(observable)` threshold is **√(n/2)** times the correctly scaled two-SD threshold for differences of means. It is conservative at n=10 and too small for single-run differences (n=1); retain it only as a labeled historical diagnostic. Known-SD Gaussian null rates are 15.7299% at n=1 and 7.744×10⁻⁶ at n=10 under the old rule, versus approximately 4.55% with two SD of the contrast. An estimated SD from ten sham pairs has no universal error-rate guarantee. Evaluation draws cannot select their own floor.
 
-Notes. The fixed CSV's first row is step 0, the seeded configuration, so the initial index is on record. The verification runs in out/ (round 1: seeds 1 and 2, both engines; round 2.1: seed 1 at field 1 / decay 1) were executed during development to check the fixes and the RNG path and are not stage 1 or stage 2; README says so.
+Historical development note: the earlier seed-1 birth-bias investigation reported 178 births, 50 with multiple available slots, and identical outcomes for field 0, 1 and 4 at decay 0. Those measurements are development evidence only; they are not an independent calibration, prediction or confirmatory result. Existing files in out/ remain historical, including legacy twelve-column exports. New completion sidecars are created only for future completed runs; matching a historical hash does not authenticate its producer.
+
+Costly contribution remains gated behind completion of Stage 2 and a separate preregistration. Declaring a cost opens the experiment; collective benefit, private incentives and invasion across starting frequencies must be demonstrated before naming a social dilemma. A monomer-consuming cost would need an explicit debit in the ledger. No such model is implemented in this phase.
+
+Any future collapse analysis must record an unobserved event as right-censoring at the observation end, never as an event at that endpoint. Predictive evaluation requires independent runs and informative observed event outcomes; adjacent rows from one trajectory do not provide held-out run evidence.
