@@ -51,4 +51,5 @@ Any future collapse analysis must record an unobserved event as right-censoring 
 ## Stage 3: 3-D Spatial Collapse [EXPLORATORY, THRESHOLD BYPASSED 2026-10-07]
 * **Hypothesis:** The shielding mutualism will suffer a severe viability drop or total collapse in the 3-D lattice compared to the 2-D cylinder under identical resource and field parameters.
 * **Mechanism:** The expansion to a 26-neighbor topological graph removes the dispersal bottleneck. Parasites or non-contributors can exploit the shared purine public good from multiple vertical and diagonal Z-axis vectors, overwhelming the local clustering that previously sustained the cooperators.
-* **Decision Unit & Evaluation:** [EXPLORATORY, THRESHOLD BYPASSED 2026-10-07] Post-hoc arm selection at field_scale=20.0 invalidates formal prediction. 3-D CA confounds dimension with new r^2 penalties.
+* **Decision Unit & Evaluation:** Ten matched-seed run-pair contrasts comparing the 2-D engine against the 3-D engine. The prediction holds if the 3-D arms exhibit a statistically significant negative shift in the clustering index and `mean_y` survival metric that exceeds the established finite-sham calibration floors.
+  * **[EXPLORATORY, THRESHOLD BYPASSED 2026-10-07]** Post-hoc arm selection at field_scale=20.0 invalidates formal prediction. 3-D CA confounds dimension with new r^2 penalties.
