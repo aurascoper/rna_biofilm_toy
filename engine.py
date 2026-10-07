@@ -97,11 +97,12 @@ def diffuse_monomers(monomer_grid):
     Operator note (corrected 2026-10-06; an earlier version of this comment said the scheme
     "is not self-adjoint", which conflated a per-link coefficient with the operator): in the
     guarded scheme as coded a link fires one way, from the higher cell, with the GIVER's
-    degree as divisor. Linearised (both directions firing) each link carries
-    D*(1/n_i + 1/n_j), symmetric in i and j, so the assembled operator is self-adjoint.
-    Linear stability of that operator under explicit Euler at dt = 1 needs D < 2/rho ~ 0.677
-    on this cylinder, tighter than the non-negativity bound D <= 1 the assert enforces;
-    D = 0.15 satisfies both."""
+    degree as divisor. Removing that guard defines a DIFFERENT, unguarded reference
+    operator: both ordered directions fire, giving D*(1/n_i + 1/n_j) per link.
+    That reference is symmetric; its explicit-Euler bound is about 0.677 at D=1
+    on the 5 by 4 diagnostic cylinder. It is not a linearisation or stability
+    result for this downhill-only update. The assert here is the independent
+    non-negativity bound D <= 1."""
     flux_delta = np.zeros_like(monomer_grid, dtype=np.float64)
     assert DIFFUSION_COEFFICIENT <= 1.0, "non-negativity bound: outflux <= D*c requires D <= 1"
     for x in range(WIDTH):

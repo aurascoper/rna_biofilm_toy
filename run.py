@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: MIT
 """Runner for both engines.
 
-  python run.py --engine original --seed 1 --steps 100 --out out/original_s1.csv
-  python run.py --engine fixed    --seed 1 --steps 100 --out out/fixed_s1.csv
+  python run.py --engine original --seed 1 --steps 100 --out out/NEW_original_s1.csv
+  python run.py --engine fixed    --seed 1 --steps 100 --out out/NEW_fixed_s1.csv
 
 original: 5 columns, the same as the recovered CSV (step, population_count,
           total_monomer_mass, mean_purine_ratio, mean_radiotropism).
@@ -13,15 +13,22 @@ fixed:    those 5 plus births, deaths, injected_gross, inject_clip, diffusion_cl
           --field-scale F multiplies the radiation field (damage AND tropism bias);
           --decay-scale S multiplies the decay constant only (damage alone), so
           field 1 / decay 0 is the attribution arm: gradient on, damage off.
+
+Successful future runs write OUT.provenance.json completion metadata. Existing
+outputs are refused. --purpose records intent (default development); research
+purposes still require the gates in PREDICTION.md. Failed runs have no completion
+sidecar and may leave a partial CSV.
 """
 import argparse
 import csv
 import math
 import os
 import random
-import sys
+import time
+from pathlib import Path
 
 import numpy as np
+import provenance
 
 LEDGER_TOL = 1e-8
 COLUMNS5 = ["step", "population_count", "total_monomer_mass", "mean_purine_ratio", "mean_radiotropism"]
@@ -81,7 +88,7 @@ def run_fixed(seed, steps, writer, field_scale=1.0, decay_scale=1.0):
         grid, mono, L = E.step(grid, mono, field, gx, gy, decay=decay)
         n, m, purine, tropism, mean_occ, index, mean_y = E.summarize(grid, mono)
         predicted = L["injected_gross"] - L["inject_clip"] - L["diffusion_clip"] - L["birth_sink"] + L["death_return"]
-        assert math.isclose(m - m_prev, predicted, abs_tol=LEDGER_TOL), \
+        assert math.isclose(m - m_prev, predicted, rel_tol=0.0, abs_tol=LEDGER_TOL), \
             f"ledger identity broken at step {step}: dM={m - m_prev!r} predicted={predicted!r}"
         m_prev = m
         total_deaths += L["deaths"]
@@ -103,20 +110,40 @@ def main(argv=None):
     p.add_argument("--seed", type=int, required=True)
     p.add_argument("--steps", type=int, default=100)
     p.add_argument("--out", required=True)
+    p.add_argument("--purpose", choices=["development", "verification", "calibration", "confirmation"], default="development")
     p.add_argument("--field-scale", type=float, default=1.0, help="multiplies the radiation field (damage and tropism bias)")
     p.add_argument("--decay-scale", type=float, default=1.0, help="multiplies DECAY_CONSTANT only (damage alone)")
     a = p.parse_args(argv)
+    if a.steps <= 0:
+        p.error("--steps must be positive")
+    if not 0 <= a.seed < 2**32:
+        p.error("--seed must be in [0, 2**32)")
+    if any(not math.isfinite(v) or v < 0 for v in (a.field_scale, a.decay_scale)):
+        p.error("scales must be finite and nonnegative")
+    if a.engine == "original" and (a.field_scale != 1.0 or a.decay_scale != 1.0):
+        p.error("--field-scale and --decay-scale apply to the fixed engine only")
+    sidecar = Path(a.out + ".provenance.json")
+    if Path(a.out).exists() or sidecar.exists():
+        p.error("output or completion sidecar already exists; choose a new path")
+    if a.engine == "fixed":
+        import engine as E
+    else:
+        import engine_original as E
+    sources = provenance.source_hashes(a.engine)
+    git = provenance.git_state()
+    started = provenance.utc_now()
+    clock = time.perf_counter()
     os.makedirs(os.path.dirname(a.out) or ".", exist_ok=True)
-    with open(a.out, "w", newline="") as f:
+    with open(a.out, "x", newline="") as f:
         w = csv.writer(f)
         if a.engine == "original":
-            if a.field_scale != 1.0 or a.decay_scale != 1.0:
-                sys.exit("--field-scale and --decay-scale apply to the fixed engine only")
             w.writerow(COLUMNS5)
             run_original(a.seed, a.steps, w)
         else:
             w.writerow(COLUMNS5 + LEDGER_COLS + SPATIAL_COLS)
             run_fixed(a.seed, a.steps, w, a.field_scale, a.decay_scale)
+    record = provenance.completion_record(a, E, sources, git, started, time.perf_counter() - clock, np.__version__)
+    provenance.write_completion(sidecar, record)
 
 
 if __name__ == "__main__":

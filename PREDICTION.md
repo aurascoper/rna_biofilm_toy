@@ -4,7 +4,7 @@ Fixed configuration: engine.py at the future preregistered source hash, 50 by 50
 
 Seed allocation: null calibration uses seeds **1–20**, forming ten independent sham run-pairs `(i, i+10)`, i=1,…,10. Future confirmatory arms use seeds **21–30**, paired across arms. Development outputs, including earlier runs on these seed numbers, are not calibration or confirmation and must not be reused as either. Freeze source hashes, all parameters, observable extraction and matching rules before generating the future calibration; freeze measured floors and predictions before confirmation. A changed rule requires a new preregistration and independent data.
 
-Arms on confirmatory seeds 21–30: field ladder at decay 1, field_scale 0, 0.25, 1, 4; attribution arm field_scale 1 / decay_scale 0. A field-0 / decay-0 null is the calibration configuration (equivalent dynamics to field-0 / decay-1). Field 0 makes slot weights 1 and deaths 0 by construction. Each run needs a new filename and the completion sidecar from run.py, with purpose `calibration` or `confirmation` as applicable. These purpose labels record intent; they do not enforce the preregistration gate or authenticate historical files.
+Arms on confirmatory seeds 21–30: field ladder at decay 1, field_scale 0, 0.25, 1, 4, 20; attribution arm field_scale 20 / decay_scale 0. A field-0 / decay-0 null is the calibration configuration (equivalent dynamics to field-0 / decay-1). Field 0 makes slot weights 1 and deaths 0 by construction. Each run needs a new filename and the completion sidecar from run.py, with purpose `calibration` or `confirmation` as applicable. These purpose labels record intent; they do not enforce the preregistration gate or authenticate historical files.
 
 The decision unit is an **individual run-pair contrast**, not an across-run mean. Report means and intervals across runs descriptively, without a mean-level floor verdict. The observable definitions and matched-population processing must be identical for sham and tested contrasts. Before calibration, specify one deterministic matched-N procedure, its common population range, how its curve becomes the run-pair contrast to be judged, and its missing-overlap rule; do not switch between interpolation and the spec 04 covariate model after seeing effects.
 
@@ -25,11 +25,11 @@ Stage 2, freeze floors and predictions before confirmation on seeds 21–30:
     floor(mean_y) = 2 × sd(D_mean_y; corrected=true) = 0.161792
     floor(clustering_index) = 2 × sd(D_clustering_index; corrected=true) = 0.459513
 
-Prediction for clustering_index (direction, rough size and ordering across field 0.25, 1, 4 at matched population):
-Positive direction (increase). Higher field fields kill exposed (less shielded) cells, artificially selecting for highly clustered regions. The index will increase monotonically across field 0.25, 1, and 4 relative to field 0. Magnitude expected > 1.0 at field 4.
+Prediction for clustering_index (direction, rough size and ordering across field 0.25, 1, 4, 20 at matched population):
+Positive direction (increase). Higher field fields kill exposed (less shielded) cells, artificially selecting for highly clustered regions. The index will increase monotonically across field 0.25, 1, 4, and 20 relative to field 0. Magnitude expected > 1.0 at field 4, and much higher at field 20.
 
 Prediction for mean_y (direction, rough size and ordering, specifying the attribution contrast):
-Negative direction (decrease) for ladder-minus-null, as damage scales with y. mean_y decreases with field 0.25 < 1 < 4. The ladder-minus-attribution contrast isolates damage vs tropism; attribution arm (tropism only) will shift mean_y upward (positive), while ladder (damage + tropism) shifts it downward, so the double contrast will show strong negative shift driven by differential mortality.
+Negative direction (decrease) for ladder-minus-null, as damage scales with y. mean_y decreases with field 0.25 < 1 < 4 < 20. The ladder-minus-attribution contrast isolates damage vs tropism; attribution arm (tropism only) will shift mean_y upward (positive), while ladder (damage + tropism) shifts it downward, so the double contrast will show strong negative shift driven by differential mortality.
 
 Reason each prediction could fail for the right reason:
 clustering_index could fail if massive cell death isolates clusters so much that the geometric measure of clustering breaks down or the population drops below the matched-N common overlap range. mean_y could fail if tropism bias (which pushes cells to high y) outcompetes the damage bias, leading to a net positive shift even with damage on.
