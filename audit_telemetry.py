@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Audit the recovered telemetry CSV against the arithmetic the engine implies.
 
   python -I audit_telemetry.py data/simulation_telemetry.csv

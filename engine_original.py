@@ -1,3 +1,10 @@
+# SPDX-License-Identifier: MIT
+# LICENSING NOTE: this file transcribes machine-generated text (an LLM-written engine
+# pasted into a chat on 2026-10-06). No copyright is claimed over the transcribed content,
+# whose copyright status is unsettled. The restored line breaks, the added
+# make_radiation_field() wrapper and this header are released under the MIT license in
+# LICENSE-CODE. The rest of the repository's code is MIT; its prose, specs and data are
+# CC BY 4.0 (LICENSE).
 # Verbatim transcription of the pasted engine (paste id 911e, "Complete Simulation
 # Engine Implementation"). Engine functions are unchanged. The paste's newlines were
 # destroyed inside the constant blocks and import line; every restored line break is

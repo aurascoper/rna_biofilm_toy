@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 # The fixed toy. A copy of engine_original.py with exactly the changes listed in
 # README.md: live-grid health, cylinder boundary, direction-cosine alignment, a measured
 # mass ledger, and the diffusion assert's bound and name. Nothing else.
@@ -92,8 +93,15 @@ def diffuse_monomers(monomer_grid):
     conservative by bookkeeping (every transfer is added to the receiver and subtracted from
     the giver). Returns (grid, diffusion_clip) where diffusion_clip = sum(pre - post) around
     the clip; provably 0.0 for this scheme (see README), kept so the ledger identity holds by
-    construction rather than by geometry. Note the scheme is not self-adjoint: an edge cell
-    pushes D/5 per link, an interior cell D/8. A modelling quirk, not a bug."""
+    construction rather than by geometry.
+    Operator note (corrected 2026-10-06; an earlier version of this comment said the scheme
+    "is not self-adjoint", which conflated a per-link coefficient with the operator): in the
+    guarded scheme as coded a link fires one way, from the higher cell, with the GIVER's
+    degree as divisor. Linearised (both directions firing) each link carries
+    D*(1/n_i + 1/n_j), symmetric in i and j, so the assembled operator is self-adjoint.
+    Linear stability of that operator under explicit Euler at dt = 1 needs D < 2/rho ~ 0.677
+    on this cylinder, tighter than the non-negativity bound D <= 1 the assert enforces;
+    D = 0.15 satisfies both."""
     flux_delta = np.zeros_like(monomer_grid, dtype=np.float64)
     assert DIFFUSION_COEFFICIENT <= 1.0, "non-negativity bound: outflux <= D*c requires D <= 1"
     for x in range(WIDTH):
@@ -165,11 +173,12 @@ def slot_weights(org, x, y, slots, gx, gy):
     return weights
 
 
-def step(grid, monomer_grid, flux_map, gx, gy):
+def step(grid, monomer_grid, flux_map, gx, gy, decay=DECAY_CONSTANT):
     """One step. Returns (grid, monomer_grid, ledger). Ledger terms are measured deltas:
     M(t) - M(t-1) == injected_gross - inject_clip - diffusion_clip - birth_sink + death_return.
     death_return is the amount actually added after the capacity clamp, so the death clamp
-    is folded into it rather than being a sixth term."""
+    is folded into it rather than being a sixth term. `decay` defaults to DECAY_CONSTANT;
+    run.py scales it for the attribution arm (damage off, gradient on)."""
     grid_snapshot = copy.deepcopy(grid)
     monomer_grid, injected_gross, inject_clip = inject_vent_monomers(monomer_grid)
     monomer_grid, diffusion_clip = diffuse_monomers(monomer_grid)
@@ -194,7 +203,7 @@ def step(grid, monomer_grid, flux_map, gx, gy):
                     shielding_points += grid_snapshot[nb_x, nb_y]["organism"].purine_ratio
             kappa = org.purine_ratio * 0.25
             attenuated_flux = local_flux * np.exp(-kappa * shielding_points)
-            org.core_health -= (attenuated_flux * DECAY_CONSTANT)
+            org.core_health -= (attenuated_flux * decay)
             if org.core_health <= 0.0:
                 grid[x, y]["occupied"] = False
                 grid[x, y]["organism"] = None
@@ -241,14 +250,39 @@ def empty_grid():
 
 
 def summarize(grid, monomer_grid):
-    """population, total mass, mean purine, mean radiotropism (means computed the same way)."""
+    """population, total mass, mean purine, mean radiotropism (means computed the same way),
+    mean_occupied_degree, clustering_index, mean_y.
+
+    clustering_index = mean_occupied_degree / expected_degree, where expected_degree is the
+    mean available degree over the occupied sites (5 on rows 0 and HEIGHT-1, 8 inside) times
+    (N-1)/(WIDTH*HEIGHT-1), i.e. what uniform random placement of the same N would give.
+    It is 1.0 for a random scatter and 6-7 for a solid blob at these populations, and it is
+    nan when N < 2. CAUTION: at fixed shape it falls like ~2499/N (an interior strip of
+    height h has mean occupied degree 8 - 6/h while the expectation grows with N), so arms
+    that end at different populations must be compared at matched N, never at step 100
+    alone; the raw mean_occupied_degree is returned for that reason. mean_y is nan at N = 0."""
     n = 0
     purine = 0.0
     tropism = 0.0
+    occ_deg = 0
+    avail_deg = 0
+    ysum = 0
     for x in range(WIDTH):
         for y in range(HEIGHT):
             if grid[x, y]["occupied"]:
                 n += 1
                 purine += grid[x, y]["organism"].purine_ratio
                 tropism += grid[x, y]["organism"].radiotropism
-    return n, float(np.sum(monomer_grid)), (purine / n if n else 0.0), (tropism / n if n else 0.0)
+                nbrs = cylinder_neighbors(x, y)
+                avail_deg += len(nbrs)
+                occ_deg += sum(1 for nx, ny in nbrs if grid[nx, ny]["occupied"])
+                ysum += y
+    mean_occ = occ_deg / n if n else float("nan")
+    if n >= 2:
+        expected = (avail_deg / n) * (n - 1) / (WIDTH * HEIGHT - 1)
+        index = mean_occ / expected
+    else:
+        index = float("nan")
+    mean_y = ysum / n if n else float("nan")
+    return (n, float(np.sum(monomer_grid)), (purine / n if n else 0.0), (tropism / n if n else 0.0),
+            mean_occ, index, mean_y)
