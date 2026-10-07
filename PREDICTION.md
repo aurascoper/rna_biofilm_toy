@@ -47,3 +47,8 @@ Historical development note: the earlier seed-1 birth-bias investigation reporte
 Costly contribution remains gated behind completion of Stage 2 and a separate preregistration. Declaring a cost opens the experiment; collective benefit, private incentives and invasion across starting frequencies must be demonstrated before naming a social dilemma. A monomer-consuming cost would need an explicit debit in the ledger. No such model is implemented in this phase.
 
 Any future collapse analysis must record an unobserved event as right-censoring at the observation end, never as an event at that endpoint. Predictive evaluation requires independent runs and informative observed event outcomes; adjacent rows from one trajectory do not provide held-out run evidence.
+
+## Stage 3: 3-D Spatial Collapse (Topological Graph Extension)
+* **Hypothesis:** The shielding mutualism will suffer a severe viability drop or total collapse in the 3-D lattice compared to the 2-D cylinder under identical resource and field parameters.
+* **Mechanism:** The expansion to a 26-neighbor topological graph removes the dispersal bottleneck. Parasites or non-contributors can exploit the shared purine public good from multiple vertical and diagonal Z-axis vectors, overwhelming the local clustering that previously sustained the cooperators.
+* **Decision Unit & Evaluation:** Ten matched-seed run-pair contrasts comparing the 2-D engine against the 3-D engine. The prediction holds if the 3-D arms exhibit a statistically significant negative shift in the clustering index and `mean_y` survival metric that exceeds the established finite-sham calibration floors.
