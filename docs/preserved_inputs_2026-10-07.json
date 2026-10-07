@@ -1,0 +1,50 @@
+{
+  "purpose": "Preserved input hashes copied from the earlier local artifact review; no provenance authentication claim.",
+  "inputs": [
+    {
+      "path": "/Users/aurascoper/.codex/attachments/98ff6320-1ba0-44db-a82f-b5fac262396d/Pasted text.txt",
+      "sha256": "f32b2a518897d7ef024d15a18a070535e519148a5ceed74e44333141a9ae0d90",
+      "bytes": 44859
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/Code_Generated_Image(1).png",
+      "sha256": "5f32fca82d371d4c370ea27cdb4df477fad688d7cf18e5c1e301ee19c723f2c3",
+      "bytes": 51023
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/Code_Generated_Image.png",
+      "sha256": "9dfc0659e566a29cca12234cf91f82b6deab13ee1a65073daec4fa23f260a042",
+      "bytes": 57606
+    },
+    {
+      "path": "/Users/aurascoper/.codex/attachments/a20a92c8-cd98-4502-bc21-5d0ac237a64c/Pasted text.txt",
+      "sha256": "8faa98d459459a7ad27ed3d5b854e2d471b96bfa52e586c7114d45e153f8d7cf",
+      "bytes": 16592
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/Plan_ Bioenergy Toys Stubs & Artifact Audit.md",
+      "sha256": "f4bdd844dae9d2d687eb9fa3b8bebf26658d20ec06a45fd9c696fb1800ff6438",
+      "bytes": 15597
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/spec_symbolics_delta_h_and_continuum.md",
+      "sha256": "18ea05bf6e2360b059e4f8027e9500044106efa89a2666c91055b5d36c45bfcf",
+      "bytes": 7092
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/spec_turing_identifiability_ridge.md",
+      "sha256": "ef3b1c166eac29b76261550444a33d05b7e8ccdca033ac69f110a8a67e00cd82",
+      "bytes": 7697
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/specs06_redteam_and_expanded(1).md",
+      "sha256": "73510c47fee41650ec4b8511a5e0ffb90b2eb32d6263eb97cc1ea5d373c21a24",
+      "bytes": 11584
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/specs06_redteam_and_expanded.md",
+      "sha256": "73510c47fee41650ec4b8511a5e0ffb90b2eb32d6263eb97cc1ea5d373c21a24",
+      "bytes": 11584
+    }
+  ]
+}

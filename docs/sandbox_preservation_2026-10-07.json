@@ -1,0 +1,43 @@
+{
+  "original_sha256": "f2882c03f32a663997367d7896859347c550c834bff4e30b4c09110a3d52fcbf",
+  "original_assertion_region_identical": true,
+  "inputs": [
+    {
+      "path": "/Users/aurascoper/.codex/attachments/98ff6320-1ba0-44db-a82f-b5fac262396d/Pasted text.txt",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/Code_Generated_Image(1).png",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/Code_Generated_Image.png",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/aurascoper/.codex/attachments/a20a92c8-cd98-4502-bc21-5d0ac237a64c/Pasted text.txt",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/Plan_ Bioenergy Toys Stubs & Artifact Audit.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/spec_symbolics_delta_h_and_continuum.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/spec_turing_identifiability_ridge.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/specs06_redteam_and_expanded(1).md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/aurascoper/Downloads/specs06_redteam_and_expanded.md",
+      "unchanged": true
+    }
+  ],
+  "workbook_unchanged": true
+}

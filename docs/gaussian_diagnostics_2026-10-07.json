@@ -1,0 +1,15 @@
+{
+  "purpose": "synthetic Gaussian diagnostic, not toy calibration",
+  "references": {
+    "known_contrast_sd": 0.045500263896358396,
+    "ten_independent_shams_known_zero_mean": 0.07655282377070097,
+    "historical_individual_sd_n1": 0.15729920705028516,
+    "historical_individual_sd_n10": 7.744216431044074e-06
+  },
+  "estimated_sd_monte_carlo": 0.07612666666666666,
+  "draws": 300000,
+  "calibration_seed": 2026100706,
+  "evaluation_seed": 2026100707,
+  "assumptions": "independent Gaussian future contrast, known zero mean, corrected SD of ten independent shams",
+  "finite_sham_general_guarantee": false
+}

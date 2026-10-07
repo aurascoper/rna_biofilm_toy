@@ -1,0 +1,5 @@
+paste column residual=1.3877787807814457e-17; row residual=0.03375; reference bound(D=1)=0.6767980033993102
+Test Summary:                                         | Pass  Total  Time
+Artifact operator controls (unguarded reference only) |   24     24  1.9s
+Test Summary:                                        | Pass  Total  Time
+Contrast scale and independent synthetic diagnostics |   18     18  0.4s

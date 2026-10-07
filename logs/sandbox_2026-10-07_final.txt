@@ -1,0 +1,6 @@
+Test Summary:  | Pass  Total  Time
+bioenergy_toys |  238    238  5.1s
+
+All green. Every CONTROL held, which is the part that matters.
+Test Summary:                           | Pass  Total  Time
+sandbox additional independent controls |   52     52  1.1s

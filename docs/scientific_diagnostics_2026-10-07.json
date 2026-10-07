@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "freeze_commit": "d02040ffcddf077867a506d90e2fe62a9e7d026c",
+  "source_catalog_matches_current_files": true,
+  "serial_sha256": "2b900d1a085e5a66f8a0d358dc8753459d7d0f01c211a7ad46c5b31bb7a6ae14",
+  "serial_matches_base": true,
+  "original_exercise_sha256": "f2882c03f32a663997367d7896859347c550c834bff4e30b4c09110a3d52fcbf",
+  "original_assertions_copied_verbatim": true,
+  "original_ignored": true,
+  "historical_inputs_unchanged": 9,
+  "workbook_unchanged_sha256": "3f24c4f73ae3b234e896ced515e12b15bb210f1f65934c26f7407694103ad247",
+  "trace_readback": [
+    {
+      "fit": "single_1",
+      "rows": 8000,
+      "csv_sha256": "61b1ec2ba43b62f79080ca3aa4071315dda2f31afc9e386c6ee81aaa3660604e",
+      "passed": true
+    },
+    {
+      "fit": "lq_1",
+      "rows": 8000,
+      "csv_sha256": "fd6ad002cb137cad8de22200c90c490530f7458b349aa0d2393524168c393660",
+      "passed": true
+    },
+    {
+      "fit": "multi_1",
+      "rows": 8000,
+      "csv_sha256": "0196492ef27faed68dfc586d350399c6756ebffd4226dd3283ea7b499db3dc65",
+      "passed": true
+    },
+    {
+      "fit": "lq_2",
+      "rows": 8000,
+      "csv_sha256": "36d049eae9fa5b60c07fd956d366d751290ebe5799f04ad6ae41ea463bf71bf1",
+      "passed": true
+    },
+    {
+      "fit": "multi_2",
+      "rows": 8000,
+      "csv_sha256": "6d2a0ed470268ddf7be4eea9ffac4f156100cb2b8b33632dff8f60c03a764989",
+      "passed": true
+    },
+    {
+      "fit": "lq_beta_1",
+      "rows": 8000,
+      "csv_sha256": "5f1a61fd118d40877270f78429cdbf0abd3aa04f735b9af387b2398f3512a889",
+      "passed": true
+    },
+    {
+      "fit": "lq_beta_2",
+      "rows": 8000,
+      "csv_sha256": "fd4781f846c6a1a725559fc179a5fa2260abff6001943374e2fe7e48140c1a8d",
+      "passed": true
+    }
+  ],
+  "receipts": {
+    "diagnostics/receipts/turing_2026-10-07_02/summary.json": "205c5468f9f2ebddc08618321d51d729371eb93b7e87dd25509f73efbe86d062",
+    "diagnostics/receipts/turing_preflight_2026-10-07_03.json": "0d019989fec7eb525cd57ba619003fb401bf785bf26b0d232b3cafea35d5661a",
+    "diagnostics/receipts/symbolics_2026-10-07_03.json": "1d46254f262a241bc083c60a8227749930d702f9dabb537edb47fcb448828a31",
+    "diagnostics/receipts/metal_2026-10-07_01.json": "39a1dd9de5bb573c3220bd2d2a7f15193a4609ffdb314d82415c444e59ff42bd"
+  }
+}

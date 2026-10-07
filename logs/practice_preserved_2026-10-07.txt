@@ -1,0 +1,2913 @@
+
+1.1 vars: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:507
+  Test threw exception
+  Expression: vars(p) == [:p]
+  EXERCISE 1.1 — vars(::Var) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] vars(f::Var)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:177
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:507 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:507 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.1 vars: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:508
+  Test threw exception
+  Expression: vars(p ∧ q ∨ ¬p) == [:p, :q]
+  EXERCISE 1.1 — vars(::Or) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] vars(f::Or)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:177
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:507 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:508 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.1 vars: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:509
+  Test threw exception
+  Expression: vars(¬(r → (p ↔ q))) == [:p, :q, :r]
+  EXERCISE 1.1 — vars(::Not) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] vars(f::Not)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:177
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:507 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:509 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.1 vars: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:510
+  Test threw exception
+  Expression: vars(p ∧ p) == [:p]
+  EXERCISE 1.1 — vars(::And) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] vars(f::And)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:177
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:507 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:510 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.2 evaluate — and its refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:514
+  Test threw exception
+  Expression: evaluate(p, a) == true
+  EXERCISE 1.2 — evaluate(::Var, ::AbstractDict) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] evaluate(f::Var, a::Dict{Symbol, Bool})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:189
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:513 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:514 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.2 evaluate — and its refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:515
+  Test threw exception
+  Expression: evaluate(¬p, a) == false
+  EXERCISE 1.2 — evaluate(::Not, ::AbstractDict) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] evaluate(f::Not, a::Dict{Symbol, Bool})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:189
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:513 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:515 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.2 evaluate — and its refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:516
+  Test threw exception
+  Expression: evaluate(p ∧ q, a) == false
+  EXERCISE 1.2 — evaluate(::And, ::AbstractDict) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] evaluate(f::And, a::Dict{Symbol, Bool})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:189
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:513 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:516 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.2 evaluate — and its refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:517
+  Test threw exception
+  Expression: evaluate(p ∨ q, a) == true
+  EXERCISE 1.2 — evaluate(::Or, ::AbstractDict) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] evaluate(f::Or, a::Dict{Symbol, Bool})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:189
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:513 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:517 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.2 evaluate — and its refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:518
+  Test threw exception
+  Expression: evaluate(p → q, a) == false
+  EXERCISE 1.2 — evaluate(::Implies, ::AbstractDict) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] evaluate(f::Implies, a::Dict{Symbol, Bool})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:189
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:513 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:518 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.2 evaluate — and its refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:519
+  Test threw exception
+  Expression: evaluate(q → p, a) == true
+  EXERCISE 1.2 — evaluate(::Implies, ::AbstractDict) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] evaluate(f::Implies, a::Dict{Symbol, Bool})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:189
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:513 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:519 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.2 evaluate — and its refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:520
+  Test threw exception
+  Expression: evaluate(p ↔ q, a) == false
+  EXERCISE 1.2 — evaluate(::Iff, ::AbstractDict) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] evaluate(f::Iff, a::Dict{Symbol, Bool})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:189
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:513 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:520 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.2 evaluate — and its refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:521
+  Test threw exception
+  Expression: evaluate(q ↔ q, a) == true
+  EXERCISE 1.2 — evaluate(::Iff, ::AbstractDict) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] evaluate(f::Iff, a::Dict{Symbol, Bool})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:189
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:513 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:521 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.2 evaluate — and its refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:526
+  Test threw exception
+  Expression: evaluate(p, Dict(:p => false)) == false
+  EXERCISE 1.2 — evaluate(::Var, ::AbstractDict) is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] evaluate(f::Var, a::Dict{Symbol, Bool})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:189
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:513 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:526 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.3 truth_table — and its declared bound: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:528
+  Got exception outside of a @test
+  EXERCISE 1.3 — truth_table is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] truth_table(f::And)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:199
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:529 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:529 [inlined]
+   [10] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:310
+   [11] top-level scope
+      @ none:1
+   [12] eval(m::Module, e::Any)
+      @ Core ./boot.jl:489
+   [13] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:310
+   [14] _start()
+      @ Base ./client.jl:577
+
+1.4 tautology / contradiction / satisfiability: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:539
+  Test threw exception
+  Expression: is_tautology(p ∨ ¬p)
+  EXERCISE 1.4a — is_tautology is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_tautology(f::Or)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:202
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.4 tautology / contradiction / satisfiability: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:540
+  Test threw exception
+  Expression: is_tautology(p → p)
+  EXERCISE 1.4a — is_tautology is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_tautology(f::Implies)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:202
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:540 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.4 tautology / contradiction / satisfiability: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:541
+  Test threw exception
+  Expression: is_contradiction(p ∧ ¬p)
+  EXERCISE 1.4b — is_contradiction is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_contradiction(f::And)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:204
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:541 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.4 tautology / contradiction / satisfiability: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:542
+  Test threw exception
+  Expression: is_satisfiable(p ∧ q)
+  EXERCISE 1.4c — is_satisfiable is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_satisfiable(f::And)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:206
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:542 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.4 tautology / contradiction / satisfiability: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:544
+  Test threw exception
+  Expression: !(is_tautology(p))
+  EXERCISE 1.4a — is_tautology is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_tautology(f::Var)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:202
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:544 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.4 tautology / contradiction / satisfiability: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:545
+  Test threw exception
+  Expression: !(is_contradiction(p))
+  EXERCISE 1.4b — is_contradiction is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_contradiction(f::Var)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:204
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:545 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.4 tautology / contradiction / satisfiability: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:546
+  Test threw exception
+  Expression: !(is_tautology(p ∧ ¬p))
+  EXERCISE 1.4a — is_tautology is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_tautology(f::And)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:202
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:546 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.4 tautology / contradiction / satisfiability: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:547
+  Test threw exception
+  Expression: !(is_contradiction(p ∨ ¬p))
+  EXERCISE 1.4b — is_contradiction is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_contradiction(f::Or)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:204
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:547 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.4 tautology / contradiction / satisfiability: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:548
+  Test threw exception
+  Expression: !(is_satisfiable(p ∧ ¬p))
+  EXERCISE 1.4c — is_satisfiable is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_satisfiable(f::And)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:206
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:548 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.4 tautology / contradiction / satisfiability: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:549
+  Test threw exception
+  Expression: is_satisfiable(p)
+  EXERCISE 1.4c — is_satisfiable is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_satisfiable(f::Var)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:206
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:539 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:549 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.5 equivalence, and three laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:552
+  Test threw exception
+  Expression: equivalent(¬(p ∧ q), ¬p ∨ ¬q)
+  EXERCISE 1.5 — equivalent is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] equivalent(f::Not, g::Or)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:214
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:552 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:552 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.5 equivalence, and three laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:553
+  Test threw exception
+  Expression: equivalent(p ∧ (q ∨ r), p ∧ q ∨ p ∧ r)
+  EXERCISE 1.5 — equivalent is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] equivalent(f::And, g::Or)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:214
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:552 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:553 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.5 equivalence, and three laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:554
+  Test threw exception
+  Expression: equivalent(p → q, ¬q → ¬p)
+  EXERCISE 1.5 — equivalent is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] equivalent(f::Implies, g::Implies)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:214
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:552 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:554 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.5 equivalence, and three laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:555
+  Test threw exception
+  Expression: equivalent(p → q, ¬p ∨ q)
+  EXERCISE 1.5 — equivalent is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] equivalent(f::Implies, g::Or)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:214
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:552 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:555 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.5 equivalence, and three laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:557
+  Test threw exception
+  Expression: !(equivalent(p → q, q → p))
+  EXERCISE 1.5 — equivalent is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] equivalent(f::Implies, g::Implies)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:214
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:552 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:557 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+1.5 equivalence, and three laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:558
+  Test threw exception
+  Expression: !(equivalent(p, ¬p))
+  EXERCISE 1.5 — equivalent is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] equivalent(f::Var, g::Not)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:214
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:494 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:552 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:558 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+2.1 deduplication under the two equalities: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:574
+  Got exception outside of a @test
+  EXERCISE 2.1a — dedup_isequal is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] dedup_isequal(xs::Vector{Float64})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:227
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:575 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:576 [inlined]
+   [10] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:310
+   [11] top-level scope
+      @ none:1
+   [12] eval(m::Module, e::Any)
+      @ Core ./boot.jl:489
+   [13] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:310
+   [14] _start()
+      @ Base ./client.jl:577
+
+2.2 power set: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:587
+  Got exception outside of a @test
+  EXERCISE 2.2 — powerset is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] powerset(S::Set{Int64})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:238
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:588 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:588 [inlined]
+   [10] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:310
+   [11] top-level scope
+      @ none:1
+   [12] eval(m::Module, e::Any)
+      @ Core ./boot.jl:489
+   [13] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:310
+   [14] _start()
+      @ Base ./client.jl:577
+
+2.3 relations — and the vacuous-transitivity trap: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:605
+  Test threw exception
+  Expression: is_reflexive(eqr, S)
+  EXERCISE 2.3a — is_reflexive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_reflexive(R::Set{Tuple{Int64, Int64}}, S::Set{Int64})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:251
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:600 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:605 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+2.3 relations — and the vacuous-transitivity trap: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:606
+  Test threw exception
+  Expression: !(is_reflexive(sym, S))
+  EXERCISE 2.3a — is_reflexive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_reflexive(R::Set{Tuple{Int64, Int64}}, S::Set{Int64})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:251
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:600 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:606 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+2.3 relations — and the vacuous-transitivity trap: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:607
+  Test threw exception
+  Expression: is_symmetric(sym)
+  EXERCISE 2.3b — is_symmetric is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_symmetric(R::Set{Tuple{Int64, Int64}})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:252
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:600 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:607 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+2.3 relations — and the vacuous-transitivity trap: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:608
+  Test threw exception
+  Expression: !(is_symmetric(chain))
+  EXERCISE 2.3b — is_symmetric is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_symmetric(R::Set{Tuple{Int64, Int64}})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:252
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:600 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:608 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+2.3 relations — and the vacuous-transitivity trap: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:609
+  Test threw exception
+  Expression: is_transitive(Set([(1, 2), (2, 3), (1, 3)]))
+  EXERCISE 2.3c — is_transitive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_transitive(R::Set{Tuple{Int64, Int64}})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:253
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:600 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:609 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+2.3 relations — and the vacuous-transitivity trap: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:610
+  Test threw exception
+  Expression: !(is_transitive(chain))
+  EXERCISE 2.3c — is_transitive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_transitive(R::Set{Tuple{Int64, Int64}})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:253
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:600 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:610 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+2.3 relations — and the vacuous-transitivity trap: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:613
+  Test threw exception
+  Expression: is_transitive(nochain)
+  EXERCISE 2.3c — is_transitive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_transitive(R::Set{Tuple{Int64, Int64}})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:253
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:600 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:613 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+2.3 relations — and the vacuous-transitivity trap: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:614
+  Test threw exception
+  Expression: is_transitive(Set{Tuple{Int, Int}}())
+  EXERCISE 2.3c — is_transitive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_transitive(R::Set{Tuple{Int64, Int64}})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:253
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:600 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:614 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+2.4 equivalence classes partition the set: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:616
+  Got exception outside of a @test
+  EXERCISE 2.4 — equivalence_classes is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] equivalence_classes(R::Set{Tuple{Int64, Int64}}, S::Set{Int64})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:262
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:563 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:617 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:619 [inlined]
+   [10] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:310
+   [11] top-level scope
+      @ none:1
+   [12] eval(m::Module, e::Any)
+      @ Core ./boot.jl:489
+   [13] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:310
+   [14] _start()
+      @ Base ./client.jl:577
+
+3.1 assemble the Biofilms 6-neighbour Neumann Laplacian: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:630
+  Got exception outside of a @test
+  EXERCISE 3.1 — assemble_lap6 is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] assemble_lap6(N::Int64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:277
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:629 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:631 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:631 [inlined]
+   [10] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:310
+   [11] top-level scope
+      @ none:1
+   [12] eval(m::Module, e::Any)
+      @ Core ./boot.jl:489
+   [13] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:310
+   [14] _start()
+      @ Base ./client.jl:577
+
+3.2 assemble the unguarded cylinder reference: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:645
+  Got exception outside of a @test
+  EXERCISE 3.2 — assemble_diff_cyl is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] assemble_diff_cyl(W::Int64, H::Int64, D::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:288
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:629 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:646 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:647 [inlined]
+   [10] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:310
+   [11] top-level scope
+      @ none:1
+   [12] eval(m::Module, e::Any)
+      @ Core ./boot.jl:489
+   [13] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:310
+   [14] _start()
+      @ Base ./client.jl:577
+
+3.3 which detector catches which defect: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:662
+  Got exception outside of a @test
+  EXERCISE 3.2 — assemble_diff_cyl is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] assemble_diff_cyl(W::Int64, H::Int64, D::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:288
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:629 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:663 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:664 [inlined]
+   [10] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:310
+   [11] top-level scope
+      @ none:1
+   [12] eval(m::Module, e::Any)
+      @ Core ./boot.jl:489
+   [13] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:310
+   [14] _start()
+      @ Base ./client.jl:577
+
+3.4 the stability bound is the spectrum: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:684
+  Got exception outside of a @test
+  EXERCISE 3.1 — assemble_lap6 is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] assemble_lap6(N::Int64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:277
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:629 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:686 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:686 [inlined]
+   [10] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:310
+   [11] top-level scope
+      @ none:1
+   [12] eval(m::Module, e::Any)
+      @ Core ./boot.jl:489
+   [13] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:310
+   [14] _start()
+      @ Base ./client.jl:577
+
+4.1 the discrete L2 norm needs its measure weight: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:706
+  Test threw exception
+  Expression: ≈(l2_norm(f.(grid(n)), 1 / n), exact, atol = 0.001)
+  EXERCISE 4.1 — l2_norm is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] l2_norm(f::Vector{Float64}, dx::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:316
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:704 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:706 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.1 the discrete L2 norm needs its measure weight: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:706
+  Test threw exception
+  Expression: ≈(l2_norm(f.(grid(n)), 1 / n), exact, atol = 0.001)
+  EXERCISE 4.1 — l2_norm is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] l2_norm(f::Vector{Float64}, dx::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:316
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:704 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:706 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.1 the discrete L2 norm needs its measure weight: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:706
+  Test threw exception
+  Expression: ≈(l2_norm(f.(grid(n)), 1 / n), exact, atol = 0.001)
+  EXERCISE 4.1 — l2_norm is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] l2_norm(f::Vector{Float64}, dx::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:316
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:704 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:706 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.2 inner-product laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:717
+  Test threw exception
+  Expression: inner(u, v, dx) ≈ inner(v, u, dx)
+  EXERCISE 4.2 — inner is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] inner(u::Vector{Float64}, v::Vector{Float64}, dx::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:325
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:715 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:717 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.2 inner-product laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:718
+  Test threw exception
+  Expression: inner(u, u, dx) ≈ l2_norm(u, dx) ^ 2
+  EXERCISE 4.2 — inner is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] inner(u::Vector{Float64}, v::Vector{Float64}, dx::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:325
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:715 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:718 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.2 inner-product laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:719
+  Test threw exception
+  Expression: abs(inner(u, v, dx)) <= l2_norm(u, dx) * l2_norm(v, dx) + 1.0e-12
+  EXERCISE 4.2 — inner is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] inner(u::Vector{Float64}, v::Vector{Float64}, dx::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:325
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:715 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:719 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.2 inner-product laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:720
+  Test threw exception
+  Expression: l2_norm(u .+ v, dx) <= l2_norm(u, dx) + l2_norm(v, dx) + 1.0e-12
+  EXERCISE 4.1 — l2_norm is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] l2_norm(f::Vector{Float64}, dx::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:316
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:715 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:720 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.2 inner-product laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:721
+  Test threw exception
+  Expression: ≈(inner(u, v, dx), 0, atol = 0.001)
+  EXERCISE 4.2 — inner is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] inner(u::Vector{Float64}, v::Vector{Float64}, dx::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:325
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:715 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:721 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.2 inner-product laws: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:722
+  Test threw exception
+  Expression: l2_norm(2 .* u, dx) ≈ 2 * l2_norm(u, dx)
+  EXERCISE 4.1 — l2_norm is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] l2_norm(f::Vector{Float64}, dx::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:316
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:715 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:722 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.3 adjoint is not transpose: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:726
+  Test threw exception
+  Expression: adjoint_holds(A, x, y)
+  EXERCISE 4.3a — adjoint_holds is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] adjoint_holds(A::Matrix{ComplexF64}, x::Vector{ComplexF64}, y::Vector{ComplexF64})
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:334
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:725 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:726 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.3 adjoint is not transpose: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:730
+  Test threw exception
+  Expression: is_selfadjoint(S)
+  EXERCISE 4.3b — is_selfadjoint is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_selfadjoint(M::Matrix{ComplexF64}; atol::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:344
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:725 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:730 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.3 adjoint is not transpose: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:731
+  Test threw exception
+  Expression: !(is_selfadjoint(A))
+  EXERCISE 4.3b — is_selfadjoint is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_selfadjoint(M::Matrix{ComplexF64}; atol::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:344
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:725 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:731 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.3 adjoint is not transpose: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:736
+  Test threw exception
+  Expression: is_selfadjoint(T)
+  EXERCISE 4.3b — is_selfadjoint is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] is_selfadjoint(M::Matrix{ComplexF64}; atol::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:344
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:725 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:736 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+4.4 sampling gives a LOWER bound on the operator norm: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:738
+  Got exception outside of a @test
+  EXERCISE 4.4a — opnorm_lower_bound is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] opnorm_lower_bound(M::Matrix{Float64}, nsamples::Int64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:354
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:701 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:739 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:741 [inlined]
+   [10] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:310
+   [11] top-level scope
+      @ none:1
+   [12] eval(m::Module, e::Any)
+      @ Core ./boot.jl:489
+   [13] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:310
+   [14] _start()
+      @ Base ./client.jl:577
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:776
+  Test threw exception
+  Expression: private_benefit(1.5, S) == K_SHIELD * S
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:776 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:776
+  Test threw exception
+  Expression: private_benefit(1.5, S) == K_SHIELD * S
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:776 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:776
+  Test threw exception
+  Expression: private_benefit(1.5, S) == K_SHIELD * S
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:776 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:776
+  Test threw exception
+  Expression: private_benefit(1.5, S) == K_SHIELD * S
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:776 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:781
+  Test threw exception
+  Expression: ≈(private_benefit(1.5, 6.0), fd(2.45), atol = 1.0e-6)
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:781 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:782
+  Test threw exception
+  Expression: ≈(private_benefit(1.5, 6.0), fd(0.1), atol = 1.0e-6)
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:782 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:785
+  Test threw exception
+  Expression: ≈(exp(private_benefit(1.5, 1.5nb) * PURINE_STEP) - 1, pct, atol = 0.0005)
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:785 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:785
+  Test threw exception
+  Expression: ≈(exp(private_benefit(1.5, 1.5nb) * PURINE_STEP) - 1, pct, atol = 0.0005)
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:785 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:785
+  Test threw exception
+  Expression: ≈(exp(private_benefit(1.5, 1.5nb) * PURINE_STEP) - 1, pct, atol = 0.0005)
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:785 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:785
+  Test threw exception
+  Expression: ≈(exp(private_benefit(1.5, 1.5nb) * PURINE_STEP) - 1, pct, atol = 0.0005)
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:785 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.1 private benefit is k·S, independent of flux: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:788
+  Test threw exception
+  Expression: private_benefit(9.0, 0.0) == 0.0
+  EXERCISE 5.1 — private_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] private_benefit(u_i::Float64, S_i::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:375
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:775 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:788 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.2 public benefit is k·u_j, and eight of them equal the private half: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:791
+  Test threw exception
+  Expression: public_benefit(1.5, 1.5) == K_SHIELD * 1.5
+  EXERCISE 5.2 — public_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] public_benefit(u_i::Float64, u_j::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:385
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:791 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:791 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.2 public benefit is k·u_j, and eight of them equal the private half: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:792
+  Test threw exception
+  Expression: public_benefit(1.5, 3.0) == K_SHIELD * 3.0
+  EXERCISE 5.2 — public_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] public_benefit(u_i::Float64, u_j::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:385
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:791 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:792 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.2 public benefit is k·u_j, and eight of them equal the private half: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:793
+  Test threw exception
+  Expression: public_benefit(1.5, 3.0) != public_benefit(1.5, 1.5)
+  EXERCISE 5.2 — public_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] public_benefit(u_i::Float64, u_j::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:385
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:791 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:793 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.2 public benefit is k·u_j, and eight of them equal the private half: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:798
+  Test threw exception
+  Expression: ≈(public_benefit(1.5, 1.5), fd, atol = 1.0e-6)
+  EXERCISE 5.2 — public_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] public_benefit(u_i::Float64, u_j::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:385
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:791 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:798 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.2 public benefit is k·u_j, and eight of them equal the private half: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:800
+  Test threw exception
+  Expression: 8 * public_benefit(1.5, 1.5) ≈ private_benefit(1.5, 12.0)
+  EXERCISE 5.2 — public_benefit is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] public_benefit(u_i::Float64, u_j::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:385
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:791 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:800 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.3 private disincentive alone does not establish a dilemma: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:803
+  Test threw exception
+  Expression: payoff(1.5, 12.0, 0.0) == K_SHIELD * 1.5 * 12.0
+  EXERCISE 5.3a — payoff is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] payoff(u_i::Float64, S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:398
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:803 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:803 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.3 private disincentive alone does not establish a dilemma: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:804
+  Test threw exception
+  Expression: payoff(1.5, 12.0, 2.0) == K_SHIELD * 1.5 * 12.0 - 3.0
+  EXERCISE 5.3a — payoff is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] payoff(u_i::Float64, S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:398
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:803 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:804 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.3 private disincentive alone does not establish a dilemma: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:807
+  Test threw exception
+  Expression: !(has_private_disincentive(S, 0.0))
+  EXERCISE 5.3b — has_private_disincentive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] has_private_disincentive(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:399
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:803 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:807 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.3 private disincentive alone does not establish a dilemma: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:807
+  Test threw exception
+  Expression: !(has_private_disincentive(S, 0.0))
+  EXERCISE 5.3b — has_private_disincentive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] has_private_disincentive(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:399
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:803 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:807 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.3 private disincentive alone does not establish a dilemma: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:807
+  Test threw exception
+  Expression: !(has_private_disincentive(S, 0.0))
+  EXERCISE 5.3b — has_private_disincentive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] has_private_disincentive(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:399
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:803 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:807 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.3 private disincentive alone does not establish a dilemma: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:807
+  Test threw exception
+  Expression: !(has_private_disincentive(S, 0.0))
+  EXERCISE 5.3b — has_private_disincentive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] has_private_disincentive(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:399
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:803 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:807 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.3 private disincentive alone does not establish a dilemma: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:809
+  Test threw exception
+  Expression: has_private_disincentive(0.0, 0.01)
+  EXERCISE 5.3b — has_private_disincentive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] has_private_disincentive(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:399
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:803 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:809 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.3 private disincentive alone does not establish a dilemma: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:810
+  Test threw exception
+  Expression: !(has_private_disincentive(12.0, 2.0))
+  EXERCISE 5.3b — has_private_disincentive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] has_private_disincentive(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:399
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:803 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:810 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.3 private disincentive alone does not establish a dilemma: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:811
+  Test threw exception
+  Expression: has_private_disincentive(12.0, 4.0)
+  EXERCISE 5.3b — has_private_disincentive is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] has_private_disincentive(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:399
+    [3] eval_test_function(func::Any, args::Any, kwargs::Any, quoted_func::Union{Expr, Symbol}, source::LineNumberNode, negate::Bool)
+      @ Test ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:394
+    [4] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [5] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [6] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [7] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [8] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:803 [inlined]
+    [9] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+   [10] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:811 [inlined]
+   [11] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.4 best response is bang-bang, and a tie is a refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:815
+  Test threw exception
+  Expression: best_response(3.9, 1.0) == PURINE_MIN
+  EXERCISE 5.4 — best_response is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] best_response(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:409
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:815 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:815 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.4 best response is bang-bang, and a tie is a refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:816
+  Test threw exception
+  Expression: best_response(4.1, 1.0) == PURINE_MAX
+  EXERCISE 5.4 — best_response is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] best_response(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:409
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:815 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:816 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.4 best response is bang-bang, and a tie is a refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:819
+  Test threw exception
+  Expression: best_response(S, 0.0) == PURINE_MAX
+  EXERCISE 5.4 — best_response is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] best_response(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:409
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:815 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:819 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.4 best response is bang-bang, and a tie is a refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:819
+  Test threw exception
+  Expression: best_response(S, 0.0) == PURINE_MAX
+  EXERCISE 5.4 — best_response is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] best_response(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:409
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:815 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:819 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.4 best response is bang-bang, and a tie is a refusal: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:819
+  Test threw exception
+  Expression: best_response(S, 0.0) == PURINE_MAX
+  EXERCISE 5.4 — best_response is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] best_response(S_i::Float64, c::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:409
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:815 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:819 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.5 frozen by supply, not by weak selection: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:825
+  Test threw exception
+  Expression: mutation_events(184, 0.02) ≈ 3.68
+  EXERCISE 5.5a — mutation_events is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] mutation_events(births::Int64, rate::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:420
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:825 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:825 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.5 frozen by supply, not by weak selection: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:826
+  Test threw exception
+  Expression: max_drift(3.68, PURINE_STEP) ≈ 0.184
+  EXERCISE 5.5b — max_drift is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] max_drift(events::Float64, step::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:421
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:825 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:826 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.5 frozen by supply, not by weak selection: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:827
+  Test threw exception
+  Expression: 1.50035 - 1.49983 < max_drift(mutation_events(184, 0.02), PURINE_STEP)
+  EXERCISE 5.5a — mutation_events is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] mutation_events(births::Int64, rate::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:420
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:825 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:827 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+5.5 frozen by supply, not by weak selection: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:828
+  Test threw exception
+  Expression: mutation_events(0, 0.02) == 0.0
+  EXERCISE 5.5a — mutation_events is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] mutation_events(births::Int64, rate::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:420
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:767 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:825 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:828 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.1 the floor comes from independent sham run-pair contrasts: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:839
+  Test threw exception
+  Expression: floor_from_sham(SHAM_CONTRASTS) == FLOOR_MULTIPLE * std(SHAM_CONTRASTS; corrected = true)
+  EXERCISE 6.1 — floor_from_sham is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] floor_from_sham(sham_contrasts::Vector{Float64}; multiple::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:438
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:839 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:839 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.1 the floor comes from independent sham run-pair contrasts: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:840
+  Test threw exception
+  Expression: floor_from_sham(SHAM_CONTRASTS; multiple = 3.0) == 3.0 * std(SHAM_CONTRASTS; corrected = true)
+  EXERCISE 6.1 — floor_from_sham is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] floor_from_sham(sham_contrasts::Vector{Float64}; multiple::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:438
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:839 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:840 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.1 the floor comes from independent sham run-pair contrasts: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:841
+  Test threw exception
+  Expression: floor_from_sham(10 .* SHAM_CONTRASTS) ≈ 10 * floor_from_sham(SHAM_CONTRASTS)
+  EXERCISE 6.1 — floor_from_sham is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] floor_from_sham(sham_contrasts::Vector{Float64}; multiple::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:438
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:839 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:841 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.2 decide is sign-blind and refuses NaN: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:847
+  Test threw exception
+  Expression: decide(3NULL_SD, floor) == :detected
+  EXERCISE 6.2 — decide is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] decide(effect::Float64, floor::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:447
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:846 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:847 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.2 decide is sign-blind and refuses NaN: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:848
+  Test threw exception
+  Expression: decide(-3NULL_SD, floor) == :detected
+  EXERCISE 6.2 — decide is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] decide(effect::Float64, floor::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:447
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:846 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:848 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.2 decide is sign-blind and refuses NaN: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:849
+  Test threw exception
+  Expression: decide(0.5NULL_SD, floor) == :below_floor
+  EXERCISE 6.2 — decide is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] decide(effect::Float64, floor::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:447
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:846 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:849 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.2 decide is sign-blind and refuses NaN: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:850
+  Test threw exception
+  Expression: decide(mean(EFFECT_SAMPLE) - mean(NULL_SAMPLE), floor) == :detected
+  EXERCISE 6.2 — decide is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] decide(effect::Float64, floor::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:447
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:846 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:850 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.3 independent calibration and evaluation; invalid posthoc demo: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:854
+  Got exception outside of a @test
+  EXERCISE 6.1 — floor_from_sham is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] floor_from_sham(sham_contrasts::Vector{Float64}; multiple::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:438
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:855 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:857 [inlined]
+   [10] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:310
+   [11] top-level scope
+      @ none:1
+   [12] eval(m::Module, e::Any)
+      @ Core ./boot.jl:489
+   [13] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:310
+   [14] _start()
+      @ Base ./client.jl:577
+
+6.4 no decision without a declared loss: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:876
+  Test threw exception
+  Expression: ≈(prob_exceeds(x, 1.96), 0.05, atol = 0.01)
+  EXERCISE 6.4a — prob_exceeds is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] prob_exceeds(samples::Vector{Float64}, floor::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:477
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:875 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:876 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.4 no decision without a declared loss: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:877
+  Test threw exception
+  Expression: prob_exceeds(x, 0.0) == 1.0
+  EXERCISE 6.4a — prob_exceeds is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] prob_exceeds(samples::Vector{Float64}, floor::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:477
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:875 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:877 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.4 no decision without a declared loss: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:878
+  Test threw exception
+  Expression: prob_exceeds(x, Inf) == 0.0
+  EXERCISE 6.4a — prob_exceeds is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] prob_exceeds(samples::Vector{Float64}, floor::Float64)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:477
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:875 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:878 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+
+6.4 no decision without a declared loss: Error During Test at /Users/aurascoper/Developer/rna_biofilm_toy/bioenergy_toys.jl:880
+  Test threw exception
+  Expression: expected_loss(x, 1.0, zero_one) == prob_exceeds(x, 1.0)
+  EXERCISE 6.4b — expected_loss is not implemented
+  Stacktrace:
+    [1] error(s::String)
+      @ Base ./error.jl:44
+    [2] expected_loss(samples::Vector{Float64}, floor::Float64, loss::Function)
+      @ Main ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:478
+    [3] top-level scope
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:493
+    [4] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [5] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:833 [inlined]
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [7] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:875 [inlined]
+    [8] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:1967 [inlined]
+    [9] macro expansion
+      @ ~/Developer/rna_biofilm_toy/bioenergy_toys.jl:880 [inlined]
+   [10] macro expansion
+      @ ~/.julia/juliaup/julia-1.13.1+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/share/julia/stdlib/v1.13/Test/src/Test.jl:755 [inlined]
+Test Summary:                                                             | Pass  Error  Total  Time
+bioenergy_toys                                                            |   35    105    140  3.6s
+  1 · symbolic logic                                                      |    7     30     37  1.4s
+    1.0 Julia's own precedence (no exercise — a fact to know)             |    6             6  0.0s
+    1.1 vars                                                              |           4      4  0.9s
+    1.2 evaluate — and its refusal                                        |    1      9     10  0.1s
+    1.3 truth_table — and its declared bound                              |           1      1  0.1s
+    1.4 tautology / contradiction / satisfiability                        |          10     10  0.2s
+    1.5 equivalence, and three laws                                       |           6      6  0.1s
+  2 · set theory                                                          |    8     11     19  0.4s
+    2.0 isequal vs == (no exercise — the trap)                            |    8             8  0.1s
+    2.1 deduplication under the two equalities                            |           1      1  0.0s
+    2.2 power set                                                         |           1      1  0.0s
+    2.3 relations — and the vacuous-transitivity trap                     |           8      8  0.2s
+    2.4 equivalence classes partition the set                             |           1      1  0.1s
+  3 · operator theory on the two real lattices                            |           4      4  0.0s
+    3.1 assemble the Biofilms 6-neighbour Neumann Laplacian               |           1      1  0.0s
+    3.2 assemble the unguarded cylinder reference                         |           1      1  0.0s
+    3.3 which detector catches which defect                               |           1      1  0.0s
+    3.4 the stability bound is the spectrum                               |           1      1  0.0s
+  4 · functional analysis on a discretisation                             |    5     14     19  1.1s
+    4.1 the discrete L2 norm needs its measure weight                     |    2      3      5  0.2s
+    4.2 inner-product laws                                                |           6      6  0.2s
+    4.3 adjoint is not transpose                                          |    3      4      7  0.4s
+    4.4 sampling gives a LOWER bound on the operator norm                 |           1      1  0.3s
+  5 · game theory on the toy's shielding term                             |    7     34     41  0.3s
+    5.0 the shielding law (no exercise — a fact to know)                  |    4             4  0.0s
+    5.1 private benefit is k·S, independent of flux                       |          11     11  0.1s
+    5.2 public benefit is k·u_j, and eight of them equal the private half |           5      5  0.0s
+    5.3 private disincentive alone does not establish a dilemma           |    1      9     10  0.1s
+    5.4 best response is bang-bang, and a tie is a refusal                |    2      5      7  0.0s
+    5.5 frozen by supply, not by weak selection                           |           4      4  0.0s
+  6 · decision theory on the pre-registration                             |    8     12     20  0.3s
+    6.0 the sd convention (no exercise — a fact to know)                  |    3             3  0.1s
+    6.1 the floor comes from independent sham run-pair contrasts          |    2      3      5  0.0s
+    6.2 decide is sign-blind and refuses NaN                              |    2      4      6  0.0s
+    6.3 independent calibration and evaluation; invalid posthoc demo      |           1      1  0.1s
+    6.4 no decision without a declared loss                               |    1      4      5  0.0s
+RNG of the outermost testset: Xoshiro(0x0fd29ffe9109b7ff, 0x0defa750ee7f6925, 0x4493493dd77863fe, 0x64af25847841e4a6, 0x514c0ac5dbaf27ee)
+
+The summary above is the map: Error = an unimplemented stub, Fail = an
+implementation the spec disagrees with. Fill the next stub and re-include.
+PRACTICE_STATUS=incomplete
