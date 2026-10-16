@@ -1,0 +1,88 @@
+# Prompt 1 — Master Evidence and Novelty Audit
+
+**Artifact status:** RECONSTRUCTED, bounded desk audit; not the recovered original audit.  
+**Audit status:** PARTIAL. Source access and project records support a defensible gate assessment, but not a complete source-by-source quantitative audit of every proposed reaction, environmental parameter, and compartment.  
+**Prior disposition:** NO-GO YET for an integrated Oklo–prebiotic–protocell manuscript, preserved as historical context.  
+**Current provisional recommendation:** NO-GO YET for the integrated thesis; no disposition is issued here for a fully specified narrower project.
+
+## 1. Authority and provenance
+
+The governing scope is the supplied Master Work Order at `/Users/aurascoper/.codex/attachments/a7b8923d-fd3c-48c6-bc56-e63441b8e922/Pasted text.txt`, SHA-256 `b3bebab07808530c27696e28d03b17a2e6907207dfbd32303263962944dc7880`. Its source hierarchy is used here. No complete authoritative Prompt 1 source ledger/audit was recovered in the accessible project files. The available Prompt 1 material is a prior assessment pasted in `Pasted text.txt` (attachment SHA-256 `6467179564fccc95933f4db649ab6fc4b9d9d3b919629f13b9885cc89ae64d46`), followed by a Prompt 1.5 assessment pasted in another `Pasted text.txt` (SHA-256 `94913187d830cb80844b4e88dba65217d52625009452d32bcd49ded9c0cec53f`). Those records establish a historical decision state, not a source-complete audit. Their original filenames, authorship metadata, and source ledgers are unavailable.
+
+The reconstruction also inspected `oklo_heartbeat/WORK_ORDER_2B9_STAGE_I_PROTOCOL_COMPLETION.md` (outside Git; 2026-10-15 local revision, 71,472 bytes at inspection) and the local Oklo research notes listed in the source ledger. These support claims about what the local analyses specify or calculate, not independent empirical confirmation of Oklo conditions. No source has been promoted from a summary without its limits being stated.
+
+## 2. Narrowest defensible thesis and gate
+
+**Narrow thesis supportable as a proposal:** an Oklo-informed, conditional geochemical feasibility framework can identify the measurements and calculations needed to test whether geological energy sources and chemical disequilibria could support selected abiotic reactions under explicitly bounded analogue conditions. This is a framework/research question, not a demonstrated pathway or historical claim.
+
+**Not supported:** that Oklo hosted prebiotic synthesis, protocells, life, metabolism, or a continuous source-to-compartment pathway. The local record lacks a verified target-specific absorbed-dose history, source-to-fluid production flux, reaction-rate bridge, quantitative transport/loss budget, and demonstrated energy coupling to any compartment function. See `OKL-001`–`OKL-008`.
+
+The historical NO-GO YET is consistent with the evidence reviewed here. It is neither treated as self-proving nor silently superseded. Prompt 1.5's earlier Track A/Track B distinction is retained only as a prior recommendation; this audit does not independently complete that work order.
+
+## 3. Claim ledger
+
+| Claim ID | Claim and evidence class | Evidence/status | Limitation / falsification or closure condition |
+|---|---|---|---|
+| **OKL-001** | Oklo natural fission operation is source-reported from reactor-zone isotopic/geochemical evidence. | Meshik et al. (2004), *Physical Review Letters* 93, 182302, DOI [10.1103/PhysRevLett.93.182302](https://doi.org/10.1103/PhysRevLett.93.182302), reports fission Xe/Kr in associated phosphate and interprets an inferred cycling pattern of 30-minute active pulses separated by 2.5-hour dormant intervals. SOURCE-REPORTED + author interpretation; PARTLY VERIFIED here from article record/abstract. | A temporal reconstruction is not a local dose, flux, spectrum, or water-target energy deposition. Independent source-text/method review is required for quantitative use. |
+| **OKL-002** | Oklo-specific dose and deposited energy in a named fluid/mineral target remain unknown in the records reviewed. | Local evidence-level note `rna_biofilm_toy-energy-v2/docs/oklo_reactor_evidence_levels_2026-10-14.md`, §§1–4, explicitly leaves the criticality rate null and rejects an unsupported core dose range pending geometry. UNKNOWN / BLOCKED. | Closure needs spatial reactor geometry, time history, radiation spectrum/transport, named material composition and mass, dose definition, and uncertainty. Do not use a core-averaged number as pore-fluid dose. |
+| **OKL-003** | Radiolytic H₂ yields are condition- and target-dependent; the Lin water experiment is an analogue, not an Oklo calibration. | Lin et al. (2005), DOI [10.1016/j.gca.2004.07.032](https://doi.org/10.1016/j.gca.2004.07.032), source values transcribed in 2B.9 §3.1 and ledger S1: measured 46.4 ± 1.9 µM at 952 Gy, 145.1 ± 6.7 µM at 3450 Gy; separate table-predicted values 18.6 ± 0.3 and 60.2 ± 1.0 µM. SOURCE-REPORTED; provenance PARTLY VERIFIED via the local checked-source record, not re-opened independently in this reconstruction. | The distinct measurement/prediction/calculation bases are unreconciled. Transfer to Oklo needs matched target composition, dose, dose rate, temperature, oxygen and losses. |
+| **OKL-004** | Nominal dose × water-mass × G-value H₂ inventory is a calculation, not a measured source or delivered quantity. | 2B.9 §3.2–3.4: with G=0.40 molecules/100 eV, 0.020 kg, 952–3450 Gy, calculates 0.789–2.861 µmol; yield-only G=0.36–0.44 gives 0.710–3.147 µmol. Conditional ideal-gas case at 67 mL, 353.15 K gives 0.35–1.25 mbar, or 350–1,250 ppmv only at 1 bar total. CALCULATED, independently dimension-checked from stated values; target inputs remain assumed. | Not source inventory, flux, delivered H₂, or receiver concentration. The mass/dose basis, phase partition, transfer and loss must be measured or bounded before resource claims. |
+| **OKL-005** | The local V1 Oklo calculations/visualizations do not establish an empirical reactor history or calibrated source term. | `oklo_heartbeat/RESULTS_B0.md`, `RESULTS_test1.md`, `RESULTS_test2.md`, `SPEC_DRAFT_oklo_pulse.md`; synthetic/model result records. The local notes report a failed Meshik pulse reproduction; test1 reports mixed pass/fail/inconclusive criteria; test2 remains a model calculation. SOURCE-REPORTED about local artifacts; model outputs are CALCULATED under declared assumptions. | No simulation was run for this audit. Results are not independently reproduced here; they must not be described as validated geological measurements. |
+| **OKL-006** | Exergonic biological reactions do not establish abiotic prebiotic pathways or energy coupling to compartments. | Historical Prompt 1 assessment explicitly separates hydrogenotrophic sulfate reduction/methanogenesis from abiotic prebiotic chemistry; the supplied Master Work Order §§4.3–4.6 requires catalyst, conditions, kinetics, and coupling evidence. INFERRED methodological conclusion; high confidence. | A reaction-specific abiotic primary demonstration under compatible conditions, kinetics, transport, and explicit coupling is needed. ΔG alone cannot close this chain. |
+| **OKL-007** | Prior primary proposals already connect natural nuclear-reactor settings with prebiotic chemistry, so novelty cannot rest on that broad combination alone. | Ebisuzaki & Maruyama (2017), “Nuclear geyser model of the origin of life: Driving force to promote the synthesis of building blocks of life,” *Geoscience Frontiers* 8(2):275–298, DOI [10.1016/j.gsf.2016.09.005](https://doi.org/10.1016/j.gsf.2016.09.005), abstract: proposes a natural-reactor-driven geyser as an origin-of-life setting, emphasizing radiation, material/energy circulation, cyclic environmental conditions, locally reductive settings, and confinement. Adam (2016), “Temperature oscillations near natural nuclear reactor cores and the potential for prebiotic oligomer synthesis,” *Origins of Life and Evolution of Biospheres* 46(2–3):171–187, DOI [10.1007/s11084-015-9478-6](https://doi.org/10.1007/s11084-015-9478-6), PubMed abstract: heat-transfer models predict reactor-related temperature cycles proposed as potentially relevant to prebiotic oligomer synthesis. These are proposals/modeling, not evidence that life originated at Oklo. Abstract-level claims checked; full-text comparative screening remains outstanding. SOURCE-REPORTED about the papers’ stated proposals; novelty assessment PARTLY VERIFIED. | Compare the exact proposed mechanisms, equations, scope, and results with the intended contribution using the full texts. Identify a narrower increment beyond these precedents; the present audit does not establish one. Neither paper proves nor disproves historical life at Oklo. |
+| **OKL-008** | No evidence reviewed establishes life, protocells, or biological activity at Oklo. | Master Work Order §3; local evidence notes distinguish geological reactor records from biological claims. UNKNOWN as historical claim; no direct evidence located. | Do not convert absence of evidence to evidence of impossibility. A historical claim needs direct, context-preserving biological evidence and a defensible chain of custody. |
+
+## 4. Quantitative and dimensional audit
+
+The supported nominal conversion is:
+
+`E_abs [J] = D [J kg⁻¹] × m [kg]`;  
+`n_H2 [mol] = G [molecules/(100 eV)] × E_abs [J] / (100 × 1.602176634×10⁻¹⁹ [J] × 6.02214076×10²³ [mol⁻¹])`.
+
+Thus `G=0.40` corresponds to `4.15×10⁻⁸ mol/J` (molecules per joule divided by Avogadro's constant), dimensionally consistent. At 952 Gy on 0.020 kg, `E_abs=19.04 J`; `n≈0.789 µmol`. At 3450 Gy, `E_abs=69.0 J`; `n≈2.861 µmol`. The calculation does not include target dosimetry uncertainty, source yield-transfer uncertainty, phase partition, transport, sampling, scavenging, recombination, leakage, or receiver recovery. Therefore the G-only interval is not a confidence interval or total uncertainty budget.
+
+The full chain remains blocked:
+
+`Oklo radiation history → energy deposited in named target → material-specific radiolytic yield → product amount/flux → reaction extent after competition and transport → chemical free energy → demonstrable coupling to compartment function`.
+
+The first three arrows are not quantified for a named Oklo aqueous target in the records audited here; the later flux and coupling arrows are also unmeasured/unvalidated. Stoichiometric ceilings cannot be calculated without selecting and sourcing a balanced reaction and defining reactant inventory. No ΔG or rate is supplied by this reconstruction.
+
+## 5. Dependency audit and novelty challenge
+
+Critical dependencies are reactor geometry/history; target-level radiation transport; material-specific radiolysis; fluid volume and renewal; source, transport, reaction and loss rates; activities/speciation; compartment composition, permeability and persistence; and a physical coupling mechanism. Parameters for these modules are not identifiable from a visualization or from the available local synthetic outputs.
+
+Closest known overlaps from the historical assessment include nuclear-geyser proposals, reactor-associated thermal cycling models (Adam 2016), Oklo radiolysis and fluid-inclusion evidence, and independent protocell/vent literature. A new systems diagram does not establish novelty. The strongest challenge identified here is that the broad reactor/geyser-plus-prebiotic framing already appears in Ebisuzaki & Maruyama (2017), while Adam (2016) separately models reactor-associated temperature oscillations as potentially relevant to prebiotic oligomer synthesis. These proposals limit novelty based solely on combining those themes; they do not establish that life originated at Oklo, and this audit does not determine whether the historical scenario occurred. Full-text comparison and screening of the downstream chemistry/compartment modules remain outstanding, so novelty is **unverified**, not absent.
+
+A narrower, potentially defensible contribution would need to be a source-auditable quantitative resource-budget method with site-specific limits, or a clearly labeled analogue-condition calculation that closes an explicitly measured source-to-reaction transfer chain. Neither is established in the current evidence packet.
+
+## 6. Ranked unresolved issues
+
+| Rank | Issue | Required closure | Gate |
+|---|---|---|---|
+| P0 | No complete authoritative Prompt 1 audit recovered. | Recover original source ledger/calculation record or continue a fully sourced reconstruction with primary methods and supplements. | Audit completeness and integration. |
+| P0 | Oklo target-specific dose/energy absent. | Named target, geometry, spectrum, dose and temporal basis with uncertainty. | Any Oklo-specific quantitative source claim. |
+| P0 | No closed source-to-reaction-to-compartment chain. | Compatible source, kinetics/transport/loss and measurable coupling evidence. | Integrated thesis. |
+| P0 | Novelty comparison is incomplete. | Retrieve/screen closest primary works and test exact claimed increment. | Manuscript novelty. |
+| P1 | Track A and Track B conflate distinct catalyst and evidence requirements. | Select one track and define reaction/compartment endpoints. | Scope. |
+| P1 | H₂ scenario omits transfer and total uncertainty. | Measure/bound transfer and all material losses; separate source from delivered amount. | Resource budget. |
+| P2 | Local Oklo simulation outputs are not independently reconstructed in this audit. | Source/code/version and calculation-level review only if used in a claim. | Reproducibility appendix. |
+
+## 7. Source ledger
+
+| ID | Source / locator | Supports | Does not support |
+|---|---|---|---|
+| S1 | Meshik, Hohenberg & Pravdivtseva (2004), PRL 93, 182302, DOI 10.1103/PhysRevLett.93.182302; abstract/table and isotope analysis. | Fission-noble-gas observations and authors' inferred cyclic reactor operation. | Local dose to pore water, organic synthesis, or biology. |
+| S2 | Lin et al. (2005), GCA 69:893–903, DOI 10.1016/j.gca.2004.07.032; §2/Table 2. Values transcribed in 2B.9 §§3.1–3.4. | Water radiolysis measurements and method precedent. | Oklo yield, delivered H₂ or receiver validation. |
+| S3 | `oklo_heartbeat/WORK_ORDER_2B9_STAGE_I_PROTOCOL_COMPLETION.md`, §§3–4, 8–9; local 2026-10-15 revision. | Provenance distinctions, nominal arithmetic, scope caveats and unknown inputs. | Independent validation of every cited primary source or experiment. |
+| S4 | `rna_biofilm_toy-energy-v2/docs/oklo_reactor_evidence_levels_2026-10-14.md`, §§1–4; worktree `b780a1a7f6113f3b8454cad5efbc7dd66b76a25a` plus untracked file. | Local evidence-scoping decisions: dose remains null, synthetic damage is not physical damage. | A canonical committed model revision or site-specific dose. |
+| S5 | `oklo_heartbeat/RESULTS_B0.md`, `RESULTS_test1.md`, `RESULTS_test2.md`, `SPEC_DRAFT_oklo_pulse.md`. | Historical local calculation/report status, including failed and inconclusive checks. | Reproduced measurements or validated Oklo reconstruction. |
+| S6 | Supplied Prompt 1 and Prompt 1.5 pasted assessment attachments (hashes in §1). | Historical NO-GO YET and prior separate-track recommendations. | Source-complete scientific audit. |
+| S7 | Russell & Martin (2012), *Cell* 151:1406–1416, DOI 10.1016/j.cell.2012.11.050; abstract. | Existing hydrothermal-gradient/protocell proposal as novelty comparator. | Oklo applicability or demonstrated origin history. |
+| S8 | “Formation of Protocell-like Vesicles in a Thermal Diffusion Column,” DOI 10.1021/ja9029818; abstract. | Laboratory demonstration of thermal-diffusion concentration and vesicle formation in a microcapillary. | Oklo conditions or a complete metabolic system. |
+| S9 | Ebisuzaki, T., & Maruyama, S. (2017), “Nuclear geyser model of the origin of life: Driving force to promote the synthesis of building blocks of life,” *Geoscience Frontiers* 8(2):275–298, DOI [10.1016/j.gsf.2016.09.005](https://doi.org/10.1016/j.gsf.2016.09.005); abstract [publisher record](https://www.sciencedirect.com/science/article/pii/S1674987116301360). Adam, Z. R. (2016), “Temperature oscillations near natural nuclear reactor cores and the potential for prebiotic oligomer synthesis,” *Origins of Life and Evolution of Biospheres* 46(2–3):171–187, DOI [10.1007/s11084-015-9478-6](https://doi.org/10.1007/s11084-015-9478-6); PubMed abstract [PMID 26680444](https://pubmed.ncbi.nlm.nih.gov/26680444/). | Ebisuzaki & Maruyama propose a natural-reactor-driven nuclear geyser as an origin-of-life setting with radiation, cycling, local redox settings and confinement; Adam models reactor-driven temperature oscillations as potentially relevant to prebiotic oligomer synthesis. These are direct novelty precedents for broad conceptual framing. | Abstract-level metadata and proposal descriptions checked. Neither paper demonstrates historical life at Oklo or resolves the present manuscript’s source-to-reaction-to-compartment chain. Full-text comparison remains outstanding; no novelty conclusion beyond this bounded overlap is verified. |
+
+## 8. Disposition
+
+**NO-GO YET** for drafting the integrated manuscript. The package is a reconstructed partial audit. It does not authorize drafting, new simulation, experiment, repository edits, or publication. Narrower work may be reconsidered only after its own evidence and novelty audit; it is not approved by this report.
+
+Cross-report links: [Biofilm CPM audit](PROMPT_3_BIOFILM_CPM_AUDIT.md), [PRRT spatial CPM audit](PROMPT_4_PRRT_SPATIAL_CPM_AUDIT.md), [Final Integration Report](FINAL_INTEGRATION_REPORT.md).
